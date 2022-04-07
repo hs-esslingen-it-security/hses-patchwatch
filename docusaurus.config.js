@@ -56,15 +56,6 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Docs",
-            items: [
-              {
-                label: "Scan Pipeline",
-                to: "/overview",
-              },
-            ],
-          },
-          {
             title: "More",
             items: [
               {
