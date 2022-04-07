@@ -60,7 +60,7 @@ const config = {
             items: [
               {
                 label: "Scan Pipeline",
-                to: "/docs/overview",
+                to: "/overview",
               },
             ],
           },
