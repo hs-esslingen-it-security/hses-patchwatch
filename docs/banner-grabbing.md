@@ -1,3 +1,9 @@
+---
+id: banner-grabbing
+title: Banner Grabbing
+sidebar_position: 3
+---
+
 For each protocol, the port
 scanner Zmap can identify if the default port is open. In addition, Zgrab2 can extract meta
 information, related to the service (e.g., banners).

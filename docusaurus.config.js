@@ -1,41 +1,36 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Patchwatch',
-  tagline: 'some subtitle',
-  url: 'https://hs-esslingen-it-security.github.io',
-  baseUrl: '/hses-patchwatch/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'hs-esslingen-it-security', // Usually your GitHub org/user name.
-  projectName: 'hses-patchwatch', // Usually your repo name.
+  title: "Patchwatch",
+  tagline: "some subtitle",
+  url: "https://hs-esslingen-it-security.github.io",
+  baseUrl: "/hses-patchwatch/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
+  organizationName: "hs-esslingen-it-security", // Usually your GitHub org/user name.
+  projectName: "hses-patchwatch", // Usually your repo name.
   trailingSlash: false,
 
   presets: [
     [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      "@docusaurus/preset-classic",
+      {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
+          routeBasePath: "/",
+          sidebarPath: require.resolve("./sidebars.js"),
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            "https://github.com/hs-esslingen-it-security/hses-patchwatch",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
-      }),
+      },
     ],
   ],
 
@@ -43,43 +38,38 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Patchwatch',
+        title: "Patchwatch",
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: "My Site Logo",
+          src: "img/logo.svg",
         },
         items: [
           {
-            type: 'doc',
-            docId: 'pipeline',
-            position: 'left',
-            label: 'Scan Pipeline',
-          },
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
+            type: "doc",
+            docId: "overview",
+            position: "left",
+            label: "Scan Pipeline",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Docs',
+            title: "Docs",
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/pipeline',
+                label: "Scan Pipeline",
+                to: "/docs/overview",
               },
             ],
           },
           {
-            title: 'More',
+            title: "More",
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/hs-esslingen-it-security/hses-patchwatch',
+                label: "GitHub",
+                href: "https://github.com/hs-esslingen-it-security/hses-patchwatch",
               },
             ],
           },

@@ -1,4 +1,10 @@
-We identified stock market information as a useful source of company information. To be more efficient than scanning the complete Internet, we compiled a database from publicly available company data and map IP addresses to companies. 
+---
+id: ip-aquisition
+title: IP Aquisition
+sidebar_position: 2
+---
+
+We identified stock market information as a useful source of company information. To be more efficient than scanning the complete Internet, we compiled a database from publicly available company data and map IP addresses to companies.
 This list of IP ranges is used as basis for our IP and port scans.
 
 This list is generated as folows:
